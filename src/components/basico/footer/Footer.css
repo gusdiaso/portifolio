@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #00000070;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+}
+
+.redes a img{
+    width: 30px;
+}
+
+.redes a img:hover{
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.redes a{
+    margin-inline: 10px;
+    height: 30px;
+}
+
+@media (max-width: 560px) {
+    .footer{
+        flex-direction: column;
+        padding: 15px 0px;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
