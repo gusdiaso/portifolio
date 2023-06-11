@@ -1,5 +1,7 @@
 import React from "react";
 import './Header.css'
+import { Link } from "react-router-dom";
+
 
 export default function Header(){
 
@@ -18,11 +20,12 @@ export default function Header(){
                         <div className="linha3"></div>
                     </div>
                 </div>
-                <div className="header-menu"> <a href="/">Sobre</a>
-                    <a href="/">Conhecimento</a>
-                    <a href="/">Projetos</a>
-                    <a href="/">Contato</a>
-                    <a href="/">Joguinho</a>
+                <div className="header-menu">
+                    <Link to="/">Sobre</Link>
+                    <Link to="/">Conhecimento</Link>
+                    <Link to="/projeto">Projetos</Link>
+                    <Link to="/contato">Contato</Link>
+                    <Link to="/game">Joguinho</Link>
                 </div>
             </nav>
         </header>
