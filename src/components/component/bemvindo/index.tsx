@@ -4,7 +4,7 @@ import Eu from '../../../../imagens/eu.png'
 
 const Bemvindo: React.FC = () => {
     return(
-        <s.Container>
+        <s.Container id="home">
             <s.Titles>
                 <s.Title>Bem Vindo!</s.Title>
                 <s.Subtitle>Eu sou um <s.Span>Desenvolvedor</s.Span>.</s.Subtitle>

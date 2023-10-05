@@ -16,11 +16,11 @@ const Navbar: React.FC = () => {
            <s.Title href="/">Gustavo</s.Title>
            <StyleSheetManager shouldForwardProp={(prop) => prop !== 'isopen'}>
                 <s.Div isopen={isMenuOpen}>
-                    <s.Link href="">Home</s.Link>
-                    <s.Link href="">Sobre</s.Link>
-                    <s.Link href="">Skills</s.Link>
-                    <s.Link href="">Portifólio</s.Link>
-                    <s.Link href="">Contato</s.Link>
+                    <s.Link href="#home" onClick={openMenu}>Home</s.Link>
+                    <s.Link href="" onClick={openMenu}>Sobre</s.Link>
+                    <s.Link href="" onClick={openMenu}>Skills</s.Link>
+                    <s.Link href="" onClick={openMenu}>Portifólio</s.Link>
+                    <s.Link href="#contato" onClick={openMenu}>Contato</s.Link>
                 </s.Div>
             </StyleSheetManager>
            <s.Hamburguer onClick={openMenu}>

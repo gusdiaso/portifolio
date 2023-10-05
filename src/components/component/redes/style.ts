@@ -14,6 +14,10 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
     font-size: 2.5rem;
+
+    @media screen and (max-width: 790px){
+        font-size: 1.8rem;
+    }
 `;
 
 export const Div = styled.div`
@@ -23,6 +27,10 @@ export const Div = styled.div`
 
 export const Text = styled.p`
     text-align: center;
+
+    @media screen and (max-width: 790px){
+        font-size: 0.8rem;
+    }
 `;
 
 export const Link = styled.a`

@@ -5,13 +5,17 @@ export const Container = styled.div`
     position: fixed;
     top: 0;
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: flex;
     background-color: rgba(242,145,27,1);
     align-items: center;
     justify-content: space-between;
     color: #fff;
     padding-inline: 10vw;
+
+    @media screen and (max-width: 790px){
+        height: 60px;
+    }
 `;
 
 export const Title = styled.a`
@@ -80,5 +84,6 @@ export const Link = styled.a`
     
     @media screen and (max-width: 790px) {
         font-size: 1.5rem;
+        text-shadow: 0px 0px 5px #000;
     }
 `;
