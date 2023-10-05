@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.form`
     width: 100%;
     background: rgb(255,183,95);
     background: radial-gradient(circle, rgba(255,183,95,1) 0%, rgba(255,140,0,1) 100%, rgba(255,140,0,1) 100%);
