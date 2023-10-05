@@ -40,9 +40,9 @@ const Contato: React.FC = () => {
     return(
         <s.Container>
             <s.Title id="contato">Contate-me</s.Title>
-            <s.Input type="text" placeholder="Nome" onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}/>
-            <s.Input type="email" name="email" id="email" placeholder="Email" onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}/>
-            <s.InputText placeholder="Mensagem" onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setText(e.target.value)}/>
+            <s.Input type="text" placeholder="Nome" value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}/>
+            <s.Input type="email" name="email" id="email" value={email} placeholder="Email" onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}/>
+            <s.InputText placeholder="Mensagem" value={text} onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setText(e.target.value)}/>
             <s.Botao type="submit" onClick={(e) => sendEmail(e)}>Enviar Email</s.Botao>
         </s.Container>
     )
