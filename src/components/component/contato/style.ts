@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.form`
     width: 100%;
     background: rgb(255,183,95);
-    background: radial-gradient(circle, rgba(255,183,95,1) 0%, rgba(255,140,0,1) 100%, rgba(255,140,0,1) 100%);
+    background: radial-gradient(circle, #1B8EF2 0%, #0B2559 100%, #0B2559 100%);
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ export const Botao = styled.button`
     
     &:hover{
         cursor: pointer;
-        background-color: #ec7e00;
+        background-color: ##1B8EF2;
         color: #fff;
         transition: 0.2s;
     }

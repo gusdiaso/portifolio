@@ -39,6 +39,7 @@ export const Link = styled.a`
 export const Image = styled.img`
     max-width: 40px;
     background-color: #ffffff22;
+    filter: invert();
     padding: 4px;
     border-radius: 50%;
     &:hover{

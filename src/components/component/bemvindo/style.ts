@@ -5,7 +5,7 @@ export const Container = styled.div`
     position: relative;
     width: 100%;
     background: #000000;
-    background: linear-gradient(350deg, rgba(0,0,0,1) 45%, rgba(242,145,27,1) 80%);
+    background: linear-gradient(350deg, #0B2559 45%, #1B8EF2 80%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ export const Titles = styled.div`
 `;
 
 export const Span = styled.span`
-    color: #F2911B;
+    color: #1B8EF2;
 `;
 
 
