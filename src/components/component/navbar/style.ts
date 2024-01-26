@@ -12,6 +12,7 @@ export const Container = styled.div`
     justify-content: space-between;
     color: #fff;
     padding-inline: 10vw;
+    z-index: 999;
 
     @media screen and (max-width: 790px){
         height: 60px;

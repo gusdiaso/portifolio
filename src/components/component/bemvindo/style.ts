@@ -34,7 +34,17 @@ export const Image = styled.img`
     @media screen and (max-width: 1410px) {
         position: relative;
         object-fit: cover;
-        width: 50%;
+        width: 60%;
+        height: auto;
+        bottom: auto;
+        right: auto;
+
+    }
+
+    @media screen and (max-width: 700px) {
+        position: relative;
+        object-fit: cover;
+        width: 80%;
         height: auto;
         bottom: auto;
         right: auto;
@@ -106,6 +116,10 @@ export const Text = styled.p`
 
     @media screen and (max-width: 790px){
         font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 440px){
+        text-align: center;
     }
 
 `;

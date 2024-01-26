@@ -15,7 +15,7 @@ const Redes: React.FC = () => {
                 <s.Link href="https://www.linkedin.com/in/gustavodias-/" target="_blank"><s.Image src={Linkedin} alt="Logo Linkedin" /></s.Link>
                 <s.Link href="https://github.com/gusdiaso" target="_blank"><s.Image src={GitHub} alt="Logo GitHub" /></s.Link>
             </s.Div>
-            <s.Text>@2023 - Site desenvolvido por Gustavo Dias</s.Text>
+            <s.Text>@2024 - Site desenvolvido por Gustavo Dias</s.Text>
         </s.Container>
     )
 }
