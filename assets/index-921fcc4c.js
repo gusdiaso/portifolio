@@ -101,7 +101,7 @@ Error generating stack: `+o.message+`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        backdrop-filter: blur(20px);
+        background-color: #1B8EF2EE;
         gap: 40px;
     }
 `,fr=A.a`
