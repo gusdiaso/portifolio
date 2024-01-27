@@ -5,12 +5,12 @@ import { FilhoProps } from './type';
 
 const CardProjeto: React.FC<FilhoProps> = (props) => {
     return(
-      <s.Link target="_blank" href={props.link}>
-        <s.Container>
+      <s.Container>
+        <s.Link target="_blank" href={props.link}>
           <s.Image src={props.dest} alt="" />
           <s.Text>{props.nome}</s.Text>
-        </s.Container>
-      </s.Link>
+        </s.Link>
+      </s.Container>
     )
 }
 
