@@ -12,7 +12,7 @@ import github from "../../../../imagens/github.png"
 const Skills: React.FC = () => {
     return(
         <s.Container id="skills">
-            <s.Title>Skills</s.Title>
+            <s.Title>Habilidades</s.Title>
             <s.Grupo>
                 <Cardskill dest={html} nome={"HTML"}/>
                 <Cardskill dest={css} nome={"CSS"}/>

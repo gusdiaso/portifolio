@@ -2,15 +2,55 @@ import { styled } from "styled-components";
 
 export const Container = styled.form`
     width: 100%;
-    background: rgb(255,183,95);
-    background: radial-gradient(circle, #1B8EF2 0%, #0B2559 100%, #0B2559 100%);
+    color: #fff;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    padding-top: 70px;
+    position: relative;
+    background: linear-gradient(320deg, #5fbffe, #6b4fff, #83328a, #6c1e29, #5139ff);
+    background-size: 400% 400%;
+    animation: animacao 10s ease-in-out infinite;
+    position: sticky;
+
+    @keyframes animacao {
+        0%{
+            background-position: 0% 50%;
+        }
+
+        50%{
+            background-position: 100% 50%;
+
+        }
+
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+    
+    &::after{
+        content: "";
+        opacity: 0.4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        background-attachment: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://images.unsplash.com/photo-1542382257-80dedb725088?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        z-index: -2;
+    }
+
+    
+
 `;
+
+
 
 export const InputText = styled.textarea`
     padding: 0.8rem 0.8rem;
@@ -28,6 +68,10 @@ export const InputText = styled.textarea`
     @media screen and (max-width: 790px){
         width: 90vw;
 
+    }
+
+    &::-webkit-scrollbar {
+    width: 0px;
     }
 
     &::-webkit-scrollbar-track {
@@ -65,7 +109,7 @@ export const Botao = styled.button`
     
     &:hover{
         cursor: pointer;
-        background-color: ##1B8EF2;
+        background-color: #7766ff;
         color: #fff;
         transition: 0.2s;
     }

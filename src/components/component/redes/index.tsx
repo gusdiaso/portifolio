@@ -8,19 +8,18 @@ import github from "../../../../imagens/github.svg"
 const Redes: React.FC = () => {
     return(
         <s.Container>
-            <s.Title>Gustavo</s.Title>
+            <s.Title>Redes Sociais</s.Title>
             <s.Div>
                 <s.Link href="https://www.instagram.com/gusdiaso/" target="_blank">
                     <s.Image src={insta} alt="Logo Instagram" />
                 </s.Link>
-                <s.Link href="https://www.linkedin.com/in/gustavodias-/" target="_blank">
+                <s.Link href="https://www.linkedin.com/in/gusdiaso/" target="_blank">
                     <s.Image src={linkedin} alt="Logo Linkedin" />
                 </s.Link>
                 <s.Link href="https://github.com/gusdiaso" target="_blank">
                     <s.Image src={github} alt="Logo GitHub" />
                 </s.Link>
             </s.Div>
-            <s.Text>@2024 - Site desenvolvido por Gustavo Dias</s.Text>
         </s.Container>
     )
 }

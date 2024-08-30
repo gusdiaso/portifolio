@@ -1,11 +1,16 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
     padding: 2.5rem;
     background-color: #000000;
     text-align: center;
     color: #fff;
+    padding-top: 70px;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Title = styled.h2`
@@ -17,6 +22,11 @@ export const Title = styled.h2`
     }
 `;
 
-export const Carrossel = styled.div`
-    
+export const Content = styled.div`
+    width: 50%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+
 `;

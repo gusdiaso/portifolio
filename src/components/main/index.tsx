@@ -7,9 +7,9 @@ import Estudos from "../component/estudos";
 const Main: React.FC = () => {
     return(
         <Container>
+            <Projetos/>
             <Skills/>
             <Estudos/>
-            <Projetos/>
         </Container>
     )
 }

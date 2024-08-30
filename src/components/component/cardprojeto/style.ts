@@ -1,48 +1,62 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    background-color: #0B2559;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    padding: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-    margin-inline: auto;
-
-    &:hover{
-        background-color: #1B8EF2;
-        transition: 0.3s
+    width: 100%;
+    height: 100%;
+    
+    &.serra{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
     }
 
-    @media screen and (max-width: 500px){
-        padding: 0.5rem;
-
+    &.m3{
+        grid-column: 1 / span 3;
+        grid-row: 4 / span 3;
     }
+
+    &.searchmap{
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 6;
+    }
+
+    &.searchmusic{
+        grid-column: 7 / span 3;
+        grid-row: 1 / span 6;
+    }
+
+    &.prownovar{
+        grid-column: 4 / span 3;
+        grid-row: 7 / span 3;
+    }
+
+    &.nanofab{
+        grid-column: 7 / span 3;
+        grid-row: 7 / span 3;
+    }
+
+    &.ppgctm{
+        grid-column: 1 / span 3;
+        grid-row: 7 / span 3;
+    }
+
+
 `;
+
+
 
 export const Image = styled.img`
-    max-width: 70vw;
-    width: 800px;
-    object-fit: cover
 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-    
-`;
-
-export const Text = styled.h3`
-    text-align: center;
-    margin-top: 1rem;
-    @media screen and (max-width: 500px){
-        font-size: 1rem;
-
+    &:hover{
+        transition: 0.2s;
+        -webkit-box-shadow:0px 0px 5px 0px #fff;
+        -moz-box-shadow: 0px 0px 5px 2px #fff;
+        box-shadow: 0px 0px 0px 4px #fff;
+        cursor: pointer;
     }
 `;
 
-export const Link = styled.a`
-    text-decoration: none;
-    color: white;
-`;
+

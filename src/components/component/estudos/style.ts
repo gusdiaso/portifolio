@@ -7,8 +7,10 @@ export const Container = styled.div`
     padding: 2rem;
     align-items: center;
     flex-direction: column;
-    background-color: #0B2559;
+    background-color: #000;
     color: #fff;
+    padding-top: 70px;
+
 `;
 
 export const Title = styled.h2`

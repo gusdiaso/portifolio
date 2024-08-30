@@ -1,6 +1,5 @@
-export interface FilhoProps {
-    dest: string;
-    nome: string;
-    link: string;
-
-  }
+export interface CardprojetoProps{
+  image: string,
+  description: string,
+  classe:string,
+}

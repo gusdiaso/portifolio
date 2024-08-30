@@ -6,7 +6,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #0D0D0D;
+    background-color: #000;
     color: #fff;
     gap: 1.2rem;
     padding: 2.5rem;
@@ -38,13 +38,16 @@ export const Link = styled.a`
 
 export const Image = styled.img`
     max-width: 40px;
-    background-color: #ffffff22;
-    filter: invert();
     padding: 4px;
+    filter: hue-rotate(-135deg) saturate(5) brightness(50);
     border-radius: 50%;
+
     &:hover{
         cursor: pointer;
-        background-color: #ffffff10;
         transition: 0.2s;
+        opacity: 0.4;
+
+
+
     }
 `;

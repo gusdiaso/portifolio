@@ -1,28 +1,87 @@
 import React from "react";
 import * as s from "./style"
-import CardProjeto from "../cardprojeto";
-import Carousel from "../carousel";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Cardprojeto from "../cardprojeto";
 import serra from "../../../../imagens/serrajr.png"
 import prownovar from "../../../../imagens/prownovar.png"
 import m3 from "../../../../imagens/m3.png"
+import searchmap from "../../../../imagens/searchmap.jpg"
+import searchmusic from "../../../../imagens/searchmusic.jpg"
+import nanofab from "../../../../imagens/nanofab.png"
+import ppgctm from "../../../../imagens/ppgctm.png"
+
 
 
 const Projetos: React.FC = () => {
-
-    const slides = [
-        <CardProjeto key="1" dest={serra} nome={"Site Serra Junior (Pela Empresa)"} link={"https://www.serrajr.eng.br/"}/>,
-        <CardProjeto key="2" dest={prownovar} nome={"Site Prownovar (Pela Empresa)"} link={"https://prownovar.com.br/"}/>,
-        <CardProjeto key="3" dest={m3} nome={"Site M3 Academy (Treinamento)"} link={"https://gusdiaso.github.io/cursoM3LandingPage_2.0/"}/>
-      ];
-
+    const images = [
+        {   
+            nome:"serra",
+            image: serra,
+            description: "imagem referente ao projeto da Serra Junior",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"prownovar",
+            image: prownovar,
+            description: "imagem referente ao projeto da Prownovar",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"m3",
+            image: m3,
+            description: "imagem referente ao projeto de Treinamento da M3",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"searchmap",
+            image: searchmap,
+            description: "imagem referente ao projeto Search Map",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"searchmusic",
+            image: searchmusic,
+            description: "imagem referente ao projeto Search Music",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"nanofab",
+            image: nanofab,
+            description: "imagem referente ao projeto do Nanofab",
+            sobre: "",
+            link: ""
+        },
+        {
+            nome:"ppgctm",
+            image: ppgctm,
+            description: "imagem referente ao projeto do PPGCTM",
+            sobre: "",
+            link: ""
+        },
+    ] 
     return(
         <s.Container id="projetos">
             <s.Title>Projetos</s.Title>
-            <s.Carrossel>
-                <Carousel slides={slides} />
-            </s.Carrossel>
+            <s.Content>
+            {
+                images.map((eachproject, index) => {
+                    return (
+                    <Cardprojeto 
+                        key={index} 
+                        image={eachproject.image} 
+                        description={eachproject.description} 
+                        classe={eachproject.nome}
+                    />
+                    );
+                })
+            }
+                </s.Content>
         </s.Container>
     )
 }

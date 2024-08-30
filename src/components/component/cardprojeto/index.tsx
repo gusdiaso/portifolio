@@ -1,17 +1,14 @@
 import React from "react";
 import * as s from "./style"
-import { FilhoProps } from './type';
+import { CardprojetoProps } from "./type";
 
 
-const CardProjeto: React.FC<FilhoProps> = (props) => {
+const Cardprojeto: React.FC<CardprojetoProps> = ({image, description, classe}) => {
     return(
-      <s.Container>
-        <s.Link target="_blank" href={props.link}>
-          <s.Image src={props.dest} alt="" />
-          <s.Text>{props.nome}</s.Text>
-        </s.Link>
-      </s.Container>
+        <s.Container className={classe}>
+          <s.Image src={image} alt={description} />
+        </s.Container>
     )
 }
 
-export default CardProjeto
+export default Cardprojeto
