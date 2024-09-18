@@ -1,4 +1,17 @@
-import { styled } from "styled-components";
+import { styled, keyframes} from "styled-components";
+
+
+const moveCards = keyframes`
+  0% {
+    transform: translateX(4%);
+  }
+  50%{
+    transform: translateX(-92%);
+  }
+  100% {
+    transform: translateX(4%);
+  }
+`;
 
 export const Container = styled.div`
     width: 100%;
@@ -35,29 +48,28 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 
     @media screen and (max-width: 790px){
         font-size: 2rem;
     }
 `;
+export const Description = styled.h2`
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    
+`;
 
 export const Grupo = styled.div`
-    width: max-content;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 4rem; 
+    width: 99vw;
     margin-bottom: 2rem;
+    overflow: hidden;
+`;
 
-    @media screen and (max-width: 720px){
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    @media screen and (max-width: 440px){
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-
+export const CardContainer = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 3.5vw;
+    animation: ${moveCards} 60s infinite;
 `;

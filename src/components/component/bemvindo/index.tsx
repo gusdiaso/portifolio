@@ -9,7 +9,7 @@ const Bemvindo: React.FC = () => {
 
                 <s.Titles>
                     <s.Title>Gustavo Dias</s.Title>
-                    <s.Span>Desenvolvedor</s.Span>
+                    <s.Span>Desenvolvedor Front-End</s.Span>
                 </s.Titles>
                 
                 <s.Linkar href="#projetos">

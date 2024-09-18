@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+
 export const Container = styled.div`
     background-color: #121212;
     display: flex;
@@ -22,3 +23,4 @@ export const text = styled.h3`
     text-align: center;
     margin-top: 1rem;
 `;
+
