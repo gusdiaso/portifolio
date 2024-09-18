@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: 100%;
     height: 70px;
     display: flex;
-    background-color: #000;
+    background-color: #000000;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -15,7 +15,10 @@ export const Container = styled.div`
     z-index: 999;
 
     @media screen and (max-width: 790px){
-        height: 60px;
+        height: 50px;
+        position: fixed;
+        justify-content: flex-end;
+        padding-inline: 5vw;
     }
 `;
 

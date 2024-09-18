@@ -18,6 +18,10 @@ export const Title = styled.h2`
     @media screen and (max-width: 790px){
         font-size: 1.8rem;
     }
+
+    @media screen and (max-width: 600px){
+      font-size: 1.5rem;
+    }
 `;
 
 export const Div = styled.div`

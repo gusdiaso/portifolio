@@ -67,7 +67,7 @@ export const InputText = styled.textarea`
 
     @media screen and (max-width: 790px){
         width: 90vw;
-
+        font-size: 0.9rem;
     }
 
     &::-webkit-scrollbar {
@@ -95,6 +95,8 @@ export const Input = styled.input`
 
     @media screen and (max-width: 790px){
         width: 90vw;
+        font-size: 0.9rem;
+
     }
 `;
 
@@ -113,6 +115,10 @@ export const Botao = styled.button`
         color: #fff;
         transition: 0.2s;
     }
+
+    @media screen and (max-width: 600px){
+      font-size: 0.8rem;
+    }
 `;
 
 export const Title = styled.h2`
@@ -121,5 +127,9 @@ export const Title = styled.h2`
 
     @media screen and (max-width: 790px){
         font-size: 2rem;
+    }
+
+    @media screen and (max-width: 600px){
+      font-size: 1.5rem;
     }
 `;

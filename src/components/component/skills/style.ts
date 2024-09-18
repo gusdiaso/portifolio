@@ -1,17 +1,4 @@
-import { styled, keyframes} from "styled-components";
-
-
-const moveCards = keyframes`
-  0% {
-    transform: translateX(4%);
-  }
-  50%{
-    transform: translateX(-92%);
-  }
-  100% {
-    transform: translateX(4%);
-  }
-`;
+import { styled} from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
@@ -53,23 +40,77 @@ export const Title = styled.h2`
     @media screen and (max-width: 790px){
         font-size: 2rem;
     }
+
+    @media screen and (max-width: 600px){
+      font-size: 1.5rem;
+    }
 `;
 export const Description = styled.h2`
     margin-bottom: 2.5rem;
     font-weight: 300;
     font-size: 1.2rem;
-    
+    text-align: center;
+
+    @media screen and (max-width: 600px){
+      font-size: 0.9rem;
+    }
 `;
 
 export const Grupo = styled.div`
-    width: 99vw;
+    width: 99.7vw;
     margin-bottom: 2rem;
     overflow: hidden;
 `;
 
 export const CardContainer = styled.div`
     display: flex;
-    width: 100%;
-    gap: 3.5vw;
-    animation: ${moveCards} 60s infinite;
+    padding: 0px 50px;
+    gap: 70px;
+    animation: moveCards 80s infinite ;
+
+    @keyframes moveCards {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-100%);
+      }
+      100%{
+        transform: translateX(0);
+      }
+    }
+
+    @media screen and (max-width: 2560px){
+      width: 60vw;
+    }
+
+    @media screen and (max-width: 1980px){
+      width: 115vw;
+    }
+
+    @media screen and (max-width: 1440px){
+      width: 185vw;
+    }
+
+    @media screen and (max-width: 1024px){
+      width: 220vw;
+      gap: 50px;
+    }
+    
+    @media screen and (max-width: 768px){
+      width: 275vw;
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 425px){
+      width: 470vw;
+    }
+
+    @media screen and (max-width: 375px){
+      width: 550vw;
+    }
+
+    @media screen and (max-width: 320px){
+      width: 660vw;
+    }
 `;
