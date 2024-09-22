@@ -1,15 +1,16 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000;
-    color: #fff;
-    padding-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding-top: 70px;
+  hyphens: auto;
 
 `;
 

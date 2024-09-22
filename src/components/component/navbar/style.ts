@@ -12,13 +12,15 @@ export const Container = styled.div`
     justify-content: center;
     color: #fff;
     padding-inline: 10vw;
-    z-index: 999;
+    z-index: 995;
 
     @media screen and (max-width: 790px){
         height: 50px;
         position: fixed;
         justify-content: flex-end;
         padding-inline: 5vw;
+        z-index: 990;
+
     }
 `;
 

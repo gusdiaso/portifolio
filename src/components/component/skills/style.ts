@@ -27,6 +27,7 @@ export const Container = styled.div`
         width: 100%;
         height: 100%;
         background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqM8S4HTUaFlvKnZnBfAjHfo99cu_9KuGrySW9w4W5V3FQ4jkTe-m5iFWWsLdKvp5BQYFklCvsFfOHWM2H2jfPN92OenFYHb0UCm_WnmMn4J5h0JCgROGFiim5HES89JJAJcvCEz4ZTW_W/s2560/programming_code_screen_207262_2560x1440.jpg");
+        background-size: cover;
         z-index: -2;
     }
 
@@ -66,7 +67,7 @@ export const CardContainer = styled.div`
     display: flex;
     padding: 0px 50px;
     gap: 70px;
-    animation: moveCards 80s infinite ;
+    animation: moveCards 120s linear infinite ;
 
     @keyframes moveCards {
       0% {
@@ -90,6 +91,10 @@ export const CardContainer = styled.div`
 
     @media screen and (max-width: 1440px){
       width: 185vw;
+    }
+
+    @media screen and (max-width: 1366px){
+      width: 200vw;
     }
 
     @media screen and (max-width: 1024px){
