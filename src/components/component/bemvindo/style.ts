@@ -32,8 +32,13 @@ export const Container = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        -moz-background-position: center;
+        -webkit-background-position: center;
         position: absolute;
         background-attachment: fixed;
+        -moz-background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        top: 0;
         top: 0;
         width: 100%;
         height: 100vh;

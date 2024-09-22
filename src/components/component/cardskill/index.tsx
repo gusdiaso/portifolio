@@ -6,7 +6,7 @@ import { FilhoProps } from './type';
 const Cardskill: React.FC<FilhoProps> = (props) => {
     return(
         <s.Container>
-          <s.Image src={props.dest} alt="" />
+          <s.Image src={props.dest} />
           <s.text>{props.nome}</s.text>
         </s.Container>
     )

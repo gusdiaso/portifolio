@@ -150,9 +150,10 @@ export const Info = styled.div`
 export const Fechar = styled.p`
   font-weight: 600;
   font-size: 2.7rem;
+  top: 0;
   text-align: right;
   position: absolute;
-  top: 0px;
+  
   right: 20px;
   color: red;
   position: absolute;
@@ -161,5 +162,10 @@ export const Fechar = styled.p`
     cursor: pointer;
     transition: 0.2s;
     opacity: 0.6;
+  }
+
+
+  @media screen and (max-width: 790px){
+    top: 40px;
   }
 `;

@@ -1,4 +1,28 @@
-import { styled } from "styled-components";
+import { styled, keyframes } from "styled-components";
+
+const PeloLado = keyframes`
+
+    from{
+        opacity: 0%;
+        translate: -100vw 0;
+    }
+    to{
+        opacity: 100%;
+        translate: 0 0;
+    }
+
+`;
+
+const Sugir = keyframes`
+
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+
+`;
 
 export const Container = styled.div`
     padding: 2.5rem;
@@ -14,8 +38,11 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-   font-size: 2.5rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    animation: ${PeloLado} 1ms;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 
     @media screen and (max-width: 790px){
         font-size: 2rem;
@@ -56,6 +83,10 @@ export const Description = styled.h2`
     font-weight: 300;
     font-size: 1.2rem;
     text-align: center;
+
+    animation: ${PeloLado} 1ms;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 
     @media screen and (max-width: 600px){
       font-size: 0.9rem;

@@ -1,8 +1,35 @@
-import { styled } from "styled-components";
+import { styled , keyframes } from "styled-components";
+
+const PeloLado = keyframes`
+
+    from{
+        opacity: 0%;
+        translate: -100vw 0;
+    }
+    to{
+        opacity: 100%;
+        translate: 0 0;
+    }
+
+`;
+
+const Sugir = keyframes`
+
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+
+`;
 
 export const Container = styled.div`
     width: 100%;
     height: 100%;
+    animation: ${Sugir} 1ms;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
     
     &.searchmap{
         grid-column: 4 / span 3;
