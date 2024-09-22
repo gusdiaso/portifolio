@@ -1,6 +1,7 @@
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import * as s from "./style";
 import emailjs from "@emailjs/browser";
+import "./contato.css"
 
 const Contato: React.FC = () => {
 
@@ -38,7 +39,7 @@ const Contato: React.FC = () => {
     }
 
     return(
-        <s.Container>
+        <s.Container className="comunicar">
             <s.Title id="contato">Contate-me</s.Title>
             <s.Input type="text" placeholder="Nome" value={name} onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}/>
             <s.Input type="email" name="email" id="email" value={email} placeholder="Email" onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}/>

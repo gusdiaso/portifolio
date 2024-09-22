@@ -10,6 +10,7 @@ import github from "../../../../imagens/github.png"
 import git from "../../../../imagens/git.png"
 import nodejs from "../../../../imagens/nodejs.png"
 import py from "../../../../imagens/python.png"
+import "./skills.css"
 
 
 const Skills: React.FC = () => {
@@ -17,7 +18,7 @@ const Skills: React.FC = () => {
         <s.Container id="skills">
             <s.Title>Habilidades</s.Title>
             <s.Description>Tecnologias que uso no dia a dia!</s.Description>
-            <s.Grupo>
+            <s.Grupo className="cardsgeral">
                 <s.CardContainer>
                     <Cardskill dest={html} nome={"HTML"}/>
                     <Cardskill dest={css} nome={"CSS"}/>

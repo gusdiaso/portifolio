@@ -1,5 +1,6 @@
 import React from "react";
 import * as s from "./style"
+import "./estudos.css"
 
 
 

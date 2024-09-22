@@ -1,19 +1,6 @@
-import { styled , keyframes } from "styled-components";
+import { styled  } from "styled-components";
 
-const PeloLado = keyframes`
 
-    from{
-        opacity: 0%;
-        translate: -100vw 0;
-    }
-    to{
-        opacity: 100%;
-        translate: 0 0;
-    }
-
-`;
-
-    
 export const Container = styled.div`
   width: 100%;
   display: flex;
@@ -33,11 +20,6 @@ export const Title = styled.h2`
     margin-bottom: 2rem;
     margin-top:1rem;
 
-    animation: ${PeloLado} 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 40%;
-
-
     @media screen and (max-width: 790px){
         font-size: 2rem;
     }
@@ -52,9 +34,6 @@ export const text = styled.p`
     margin: 20px;
     max-width: 1200px;
     text-align: justify;
-    animation: ${PeloLado} 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 0% cover 20%;
 
 
     @media screen and (max-width: 600px){

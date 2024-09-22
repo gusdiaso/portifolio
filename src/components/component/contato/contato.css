@@ -1,0 +1,8 @@
+.comunicar{
+    input, h2, textarea, button{
+        animation: PorBaixo 1ms ease-out;
+        animation-timeline: view();
+        animation-range: cover 0% cover 20%;
+    }
+   
+}

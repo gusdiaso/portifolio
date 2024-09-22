@@ -12,6 +12,7 @@ import nanofab from "../../../../imagens/nanofab.png"
 import ppgctm from "../../../../imagens/ppgctm.png"
 import SobreProjeto from "../sobreprojeto";
 import { ProjectProps } from "../sobreprojeto/type"
+import './projetos.css'
 
 const Projetos: React.FC = () => {
     const projects = [
