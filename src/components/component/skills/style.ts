@@ -64,7 +64,7 @@ export const Description = styled.h2`
 `;
 
 export const Grupo = styled.div`
-    width: 99.7vw;
+    width: 99.3vw;
     margin-bottom: 2rem;
     overflow: hidden;
 `;
