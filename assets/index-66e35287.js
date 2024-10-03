@@ -305,7 +305,7 @@ Error generating stack: `+i.message+`
       font-size: 0.9rem;
     }
 `,a0=j.div`
-    width: 99.7vw;
+    width: 99.3vw;
     margin-bottom: 2rem;
     overflow: hidden;
 `,u0=j.div`
